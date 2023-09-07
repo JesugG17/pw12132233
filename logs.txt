@@ -1,3 +1,9 @@
+commit 24fb9e6bf9f3d2441e327544060cf135d6b9dc69
+Author: Jesus Gastelum <gastelumtec21@gmail.com>
+Date:   Thu Sep 7 12:49:54 2023 -0700
+
+    create logs.txt and modify index.html
+
 commit c0de64dd5a6e330145e36b88e825ba8a923b811d
 Author: Jesus Gastelum <gastelumtec21@gmail.com>
 Date:   Thu Sep 7 12:38:36 2023 -0700
