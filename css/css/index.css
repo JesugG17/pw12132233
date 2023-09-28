@@ -20,14 +20,6 @@ button {
     background-color: #D4E3E7;
 }
 
-.resplandor__img {
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: -16px;
-    width: 100%;
-    /* z-index: -999; */
-}
 
 .nav {
     padding: 5px;
@@ -37,6 +29,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 99.5%;
+    margin: 0 auto;
 }
 
 .nav ul {
@@ -67,6 +61,7 @@ button {
 
 .banner img {
     width: 100%;
+    border: 5px solid rgba(150, 150, 150, 0.5);
 }
 
 .main {
@@ -87,12 +82,6 @@ button {
     align-items: center;
     gap: 5px;
 }
-/*
-
-*/
-/* .main:nth-last-child(0) {
-    background-color: #0070C6;
-} */
 
 .main section button {
     padding: 10px;
@@ -107,7 +96,7 @@ button {
     padding: 5px;
     display: flex;
     gap: 10px;
-    background-image: url(img/bgabajo.jpg);
+    background-color: #0e1c27;
     color: white;
     font-weight: bold;
     font-size: 2em;
@@ -118,4 +107,10 @@ button {
     padding: 10px;
     width: 250px;
     height: 100px;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
