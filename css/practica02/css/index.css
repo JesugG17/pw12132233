@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Maven+Pro:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 16px;
+    font-family: 'Lato', 'Arial';
+}
+
+/*! HEADER */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 2.5em;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header div form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    background: #fff;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-left: 15px;
+}
+
+.header div form img {
+    width: 20px;
+}
+
+.header input {
+    border: none;
+    background: transparent;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.header__nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+    font-size: 2em;
+    color: gray;
+    opacity: 0.7;
+}
+
+.header__nav ul li {
+    border-bottom: 1px solid gray;
+    padding: 2px;
+}
+
+
+#paint {
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+    object-fit: contain;
+    z-index: -1;
+}
+
+
+/*! BANNER */
+
+.section__banner {
+    display: flex;
+    width: 95%;
+    margin: 0 auto 2.5em;
+    gap: 5em;
+}
+
+.section__banner picture {
+    position: relative;
+    width: 70%;
+}
+
+.section__banner article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.section__banner article h4 {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: .75em;
+    color: #ee1995;
+}
+
+.section__banner span {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ee1995;
+}
+
+.section__banner ul {
+    list-style: none;
+}
+
+.section__banner li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.section__banner ul li::before {
+    content: "\2022";
+    font-size: 1.4em;
+    color: #ee199556;
+}
+
+#slide {
+    width: 100%;
+}
+
+#offer {
+    position: absolute;
+    top: -4.5em;
+    left: -4.5em;
+}
+
+/*! Main */
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    /* align-items: center; */
+}
+
+.main img {
+    width: 50px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.main article {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.main section {
+    width: 23%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    overflow: hidden;
+}
+
+.main a:nth-child(3) {
+   text-decoration: none; 
+   font-weight: bold;
+}
+
+.main section:nth-child(1) a {
+    color: #ee1995be;
+    font-size: 1.1em;
+}
+
+.main section:nth-child(3) a {
+    color: #005effad;
+}
+
+.main .main__form__section {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.main__form__section article {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+}
+
+.main__form__section h4 {
+    color: #ee199590;
+    font-size: 2em;
+}
+
+.main__form__section input {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.main__form__section button {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: gray;
+    background: #54bb27;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    font-weight: bold;
+}
+
+.bold{ 
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.spring {
+    color: #ee1995;
+}
+
+.eco {
+    color: #588e07;
+}
+
+.upload {
+    color: #005eff;
+}
+
+/*!footer */
+
+.footer {
+    background: #4565b1;
+    border-top: 7px solid rgba(128, 128, 128, 0.413);
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+.picture__people {
+    width: 95%;
+    text-align: end;
+    margin: 0  auto;
+}
+
+.picture__people img {
+    object-fit: cover;
+}
+
+.footer picture {
+    position: absolute;
+    display: flex;
+    gap: 0.7em;
+    right: 0;
+    top: -24px;
+    margin-right: 6em;
+}
+
+.footer section {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0em 1em;
+    gap: 1em;
+}
+
+.footer section:nth-child(3) {
+    align-items: center;
+}
+
+.footer section:nth-child(3) p:nth-child(1) {
+    letter-spacing: 2px;
+}
+
+#valid__html {
+    border: 1px solid #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 20px;
+}
