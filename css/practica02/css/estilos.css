@@ -1,0 +1,114 @@
+body{
+    font-size: 16px; /*1em*/
+    margin: 0px auto;
+    max-width: 1078px; /*cliente*/
+    min-width: 1078px;
+}
+
+header input{
+    float: right;
+    margin-right: -250px;
+    margin-top: 15px;
+}
+
+header nav{
+    margin-left: 220px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.8em;
+    color: lightgray;
+    border-bottom: 2px solid lightgray;
+    padding-bottom:4px; 
+    /* text-decoration: underline; */
+}
+
+#bgoffer{
+    position: relative;
+    top: -410px;
+    left: -35px;
+}
+#granthams{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#paint{
+    float: right;
+}
+
+#primeraseccion{
+    margin-top: 60px;
+    height: 318px;
+}
+
+#segundaseccion article{
+    text-align: right;
+    padding-right: 122px;
+}
+
+#terceraseccion article{
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#terceraseccion article img{
+    vertical-align: middle;
+}
+
+#terceraseccion article input{
+    border-radius: 5px;
+}
+
+#terceraseccion article input[type="button"]{
+    background-color: #8BC500;
+    color: white;
+    border-color: #8BC500;
+}
+
+#secc03art04{
+    padding-left: 25px;
+    padding-top: 40px;
+}
+
+#primeraseccion article{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#seccion01art01{
+    width: 60%;
+    margin-left: 30px;
+}
+
+#seccion01art02{
+    width: 30%;
+    margin-left: 50px;
+}
+
+.colorRosa{
+    color: #ff0099;
+}
+
+.colorazul{
+    color: #4267B3;
+}
+
+.colorverde{
+    color: #8BC500;
+}
+
+.letraGrande{
+    font-size: 3.5em;
+}
+
+.letraMediana{
+    font-size: 2em;
+}
+
+.nito{
+    font-weight: bold;
+}

@@ -38,9 +38,19 @@ body {
     margin-left: 15px;
 }
 
-.header div form img {
+.header form img {
     width: 20px;
 }
+
+.header form button {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 
 .header input {
     border: none;
@@ -239,7 +249,7 @@ body {
 
 .footer {
     background: #4565b1;
-    border-top: 7px solid rgba(128, 128, 128, 0.413);
+    border-top: 7px solid #80808069;
     position: relative;
     color: #fff;
     font-weight: bold;
