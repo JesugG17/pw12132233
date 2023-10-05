@@ -76,7 +76,6 @@ body {
     padding: 2px;
 }
 
-
 #paint {
     position: absolute;
     right: 0;
@@ -84,7 +83,6 @@ body {
     object-fit: contain;
     z-index: -1;
 }
-
 
 /*! BANNER */
 
@@ -296,4 +294,19 @@ body {
     border: 1px solid #fff;
     padding: 0.2em 0.5em;
     border-radius: 20px;
+}
+
+
+.contenedor {
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+
+.contenedor div {
+    background-color: red;
 }

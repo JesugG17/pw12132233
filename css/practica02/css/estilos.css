@@ -49,6 +49,10 @@ header nav ul li {
     padding-right: 122px;
 }
 
+#terceraseccion {
+    margin-bottom: 70px;
+}
+
 #terceraseccion article{
     width: 23%;
     display: inline-block;
@@ -89,6 +93,16 @@ header nav ul li {
     margin-left: 50px;
 }
 
+#seccion01art02 ul {
+    list-style: none;
+}
+
+#seccion01art02 ul li::before {
+    content: "• ";
+    margin-right: 5px;
+    color: #FF0099;
+}
+
 .colorRosa{
     color: #ff0099;
 }
@@ -111,4 +125,64 @@ header nav ul li {
 
 .nito{
     font-weight: bold;
+}
+
+.feeling__social {
+    position: relative;
+    transform-origin: 50% 50%;
+}
+
+.feeling__social span {
+    position: absolute;
+    margin-right: 3.2em;
+    right: 0px;
+    top: -2.5em;
+    color: blue;
+    font-size: 2em;
+    /* font-weight: bold; */
+    font-family: fantasy;
+    transform: rotate(-4deg); 
+}
+
+.footer {
+    background: #4565b1;
+    position: relative;
+    border-top: 7px solid lightgray;
+    height: 130px;
+    padding: 0.6em 1.5em 0.1px;
+}
+
+.footer figure {
+    position: absolute;
+    right: 0px;
+    top: -2.5em;
+    margin-right: 8em;
+}
+
+.footer figure img {
+    margin-right: 0.5em;
+}
+
+.footer section {
+    display: inline-block;
+    margin-right: 2em;
+    color: white;
+}
+
+#textoCentrado {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#people {
+    position: absolute;
+    margin-right: 40px;
+    right: 0;
+    top: -4.5em;
+}
+
+#valid__html {
+    padding: 0.3em;
+    border-radius: 1em;
+    border: 1px solid white;
 }
