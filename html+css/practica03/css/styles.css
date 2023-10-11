@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+:root {
+    --green: #b4cf56;
+    --gray: #545454;
+    --red: #d42d3f;
+    --gray-light: #e6e6e6;
+    --gray-dark: #2b2b2b;
+    --gray-dark-opacity: #2b2b2b50;
+    --white: #ffffff;
+}
+
+
+/*!HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    /* gap: 1em; */
+    margin-bottom: 1em;
+}
+
+.header input {
+    padding: 0.6em;
+    width: 60%;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.header form {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 20px; */
+}
+
+.header ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.header ul li {
+    width: 25%;
+    text-align: center;
+    padding: 1em 0.6em;
+}
+
+/*!MAIN */
+
+.main {
+    display: flex;
+    padding: 1em;
+    background: var(--gray-dark);
+    color: var(--white);
+}
+
+.main section {
+    width: 20%;
+    padding: 1em;
+    position: relative;
+}
+
+.main section a {
+    margin-bottom: 20px;
+}
+
+.main section h4 {
+    font-size: 1.5em;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.section01 img {
+    width: 200px;;
+}
+
+.nav {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main section:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.green {
+    background: var(--green);
+}
+
+.gray {
+    background: var(--gray);
+}
+
+.red {
+    background: var(--red);
+}
+
+.gray_light {
+    background: var(--gray-light);
+}
+
+.text-gray {
+    color: var(--gray)
+}
+
+.arrow_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--gray-dark-opacity);
+}
+
+.arrow {
+    width: 30px;
+    filter: invert(1);
+}   
