@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 1024px;
+    position: relative;
+    font-family: 'Roboto';
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+    border-bottom: 1px dashed black;
+}
+
+.header figure {
+    align-self: flex-end;
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+
+.nav {
+    margin-top: 32px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    gap: 24px;
+}
+
+#buy {
+    width: 50px;
+    height: 50px;
+}
+
+.main {
+    display: flex;
+    margin-top: 24px;
+    gap: 10px;
+}
+
+.main_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main_information h4 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.main_information h4 strong {
+    color: greenyellow;
+}
+
+.main_information article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_information hr {
+    border-style: dotted;
+}
+
+.main_information p {
+    color: gray;
+}
+
+.main_images {
+    position: relative;
+}
+
+.main_images_corner {
+    position: absolute;
+    /* width: 150px; */
+    bottom: 0;
+    left: 0;
+}
+
+.copy_section {
+    margin-top: 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: gray;
+}
+
+.footer {
+    display: flex;
+    margin-top: 32px;
+    color: gray;
+    justify-content: space-between;
+}
+
+.footer section {
+    border-bottom: 1px dashed gray;
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.footer section hr {
+    border-style: dashed;
+}
+
+.footer section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

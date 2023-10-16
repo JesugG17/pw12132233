@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /*! Manipular el main Axis */
+    align-items: center; /*! Manipular el cross Axis */
+    flex-direction: column;
+    gap: 30px;
+
+    /*flex-direction: columnd; */ /*! Valor por defecto: row */
+    width: 600px;
+    height: 600px;
+    border: 1px solid red;
+    margin: 60px auto;
+}
+
+.item1 {
+    background-color: aqua;
+}
+
+.item2 {
+    background-color: greenyellow;
+}
+
+.item3 {
+    background-color: red;
+}
+
+.item4 {
+    background-color: cadetblue;
+}
+
+
+.item {
+    width: 20%;
+    height: 20%;
+}

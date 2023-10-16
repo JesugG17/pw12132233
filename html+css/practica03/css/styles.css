@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+html, body {
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 :root {
@@ -18,7 +23,6 @@ body {
     --gray-text: #7c7c7c;
     --white: #ffffff;
 }
-
 
 /*!HEADER */
 .header {
@@ -145,14 +149,16 @@ body {
 
 .footer {
     background-color: var(--gray-dark);
+    /* height: 100vh; */
+    height: 100%;
     display: flex;
     gap: 1em;
-    justify-content: center;
+    justify-content: space-around;
     color: var(--white);
 }
 
 .footer img {
-    width: 80%;
+    width: 85%;
     height: 50px;
     align-self: center;
 }
@@ -167,7 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 30%;
+    width: 25%;
 }
 
 .footer ul {
@@ -191,5 +197,17 @@ body {
 .footer a {
     align-self: flex-end;
     text-decoration: none;
-    color: var(--white);
+    font-weight: bold;
+    margin-top: 14px;
+    color: var(--gray-light);
+}
+
+.last_section_ul li {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last_section_ul li:nth-child(3) {
+    width: 55%;
 }
