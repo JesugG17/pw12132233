@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --another-blue: #4a6aae;
+    --blue-light: #1b6da9;
+    --blue-medium: #245d92;
+    --blue-dark: #1e4972;
+    --blue-extra-light: #59c0e2;
+    --background: #efefef;
+    --green: #19a820;
+    --violet: #7f1aa7;
+    --pale-blue: #bde8f1;
+    --pale-yellow: #faebcc;
+    --pale-rose: #ebccd1;
+    --red-dark: #a71a19;
+    --white: #ffffff;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--blue-medium);
+    border: 1px solid black;
+    min-height: 100vh;
+    font-family: 'Arial';
+    min-width: 1124px;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+}
+
+.header img {
+    width: 200px;
+}
+
+.main {
+    background-color: var(--background);
+    width: 99%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main_header ul  {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+}
+
+.main_section {
+    display: flex;
+    padding: 0 10px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.section_art01  {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.panel_with_links figure,
+.panel_with_progress figure {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    background: var(--blue-medium);
+}
+
+.panel_with_links {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.panel_with_links ul {
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel_with_links ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.panel_with_links img {
+    filter: invert(1);
+    border-radius: 5px 5px 0px;
+}
+
+.panel_with_links figure {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px 5px 0px;
+}
+
+.panel_with_links figure img {
+    width: 15px;
+}
+
+.panel_with_progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+    color: #000000
+}
+
+.panel_with_progress figure,
+.panel_with_progress figure img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.section_art02 {
+    background-color: var(--white);
+    padding: 15px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section_cubes {
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.section_cubes article {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    height: 150px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.section_cubes article img {
+    width: 50%;
+}
+
+.section_panels img {
+    width: 100%;
+}  
+
+.section_users {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.section_users article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 23%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--another-blue);
+}
+
+.section_users article img  {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section_users button {
+    background-color: var(--blue-extra-light);
+    color: var(--white);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section_users h5 {
+    font-size: 1.3em;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.blue  {
+    background-color: var(--blue-light);
+}
+
+.violet {
+    background-color: var(--violet);
+}
+
+.red {
+    background-color: var(--red-dark)
+}
