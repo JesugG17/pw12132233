@@ -8,17 +8,18 @@
 </head>
 <body>
     <article>
-        <img class="photo" src="" alt="">
-        <h4 class="name"></h4>
+        <img class="photo hidden" src="" alt="">
+        <h4 class="default_message">Search for a character</h4>
+        <h4 class="no_results hidden">No results found with <strong class="strong"></strong></h4>
+        <h4 class="name hidden"></h4>
+        <form class="form">
+            <input class="input_search" type="text" placeholder="ej. capitan america">
+            <img src="./search.svg" alt="Search icon">
+        </form>
         <div>
-            <button class="prev">Previous</button>
-            <button class="next">Next</button>
+            <button class="prev opacity-0 disabled">Prev</button>
+            <button class="next opacity-0 disabled">Next</button>
         </div>
-        <div>
-            <button class="getCharacters">Get character</button>
-            <input type="number" class="limit">
-        </div>
-        <p class="total">1 / 10</p>
     </article>
     <script src="./marvel.js"></script>
 </body>

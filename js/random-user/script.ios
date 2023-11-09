@@ -5,10 +5,10 @@ switchport access vlan 10
 exit
 
 
-! Configuracion basica S1
+! Configuracion basica S2
 enable
 config terminal
-hostname S1
+hostname S2
 no ip domain-lookup
 enable secret cisco
 line console 0
@@ -18,8 +18,7 @@ exit
 line vty 0 15
 password cisco
 login
-exit
-end
+
 
 
 vlan database
@@ -34,9 +33,15 @@ vlan 99
 name soporte
 exit
 
+interface vlan 99
+    ip address 172.17.99.11 255.255.255.0
+    no shutdown
+exit
 
 interface range fa0/1-5
 switchport access vlan 99
+switchport mode trunk
+switchport trunk native vlan 99
 exit
 
 interface range fa0/6-10
@@ -52,7 +57,7 @@ switchport access vlan 20
 exit
 
 
-! Configuracion basica S2
+! Configuracion basica S1
 enable
 config terminal
 hostname S2
@@ -74,8 +79,14 @@ vlan 99
 name soporte
 exit
 
+interface vlan 99
+    ip address 172.17.99.12 255.255.255.0
+    no shutdown
+exit
+
 interface range fa0/1-5
-switchport access vlan 99
+switchport mode trunk
+switchport trunk native vlan 99
 exit
 
 ! Configuracion basica S3
@@ -98,18 +109,23 @@ end
 vlan database
 vtp server
 vlan 10
-name docente
+    name docente
 vlan 20 
-name estudiantes
+    name estudiantes
 vlan 30
-name invitado
+    name invitado
 vlan 99
-name soporte
+    name soporte
 exit
 
+interface vlan 99
+    ip address 172.17.99.13 255.255.255.0
+    no shutdown
+exit
 
 interface range fa0/1-5
-switchport access vlan 99
+switchport mode trunk
+switchport trunk native vlan 99
 exit
 
 interface range fa0/6-10
@@ -124,4 +140,3 @@ interface range fa0/18-24
 switchport access vlan 20
 exit
 
-w
