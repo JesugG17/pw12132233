@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+#caja div {
+    display: flex;
+    gap: 10px;
+}
+
+#caja button {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

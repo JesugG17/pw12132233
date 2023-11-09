@@ -1,0 +1,127 @@
+
+
+interface range <rango>
+switchport access vlan 10
+exit
+
+
+! Configuracion basica S1
+enable
+config terminal
+hostname S1
+no ip domain-lookup
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0 15
+password cisco
+login
+exit
+end
+
+
+vlan database
+vtp server
+vlan 10
+name docente
+vlan 20 
+name estudiantes
+vlan 30
+name invitado
+vlan 99
+name soporte
+exit
+
+
+interface range fa0/1-5
+switchport access vlan 99
+exit
+
+interface range fa0/6-10
+switchport access vlan 30
+exit
+
+interface range fa0/11-17
+switchport access vlan 10
+exit
+
+interface range fa0/18-24
+switchport access vlan 20
+exit
+
+
+! Configuracion basica S2
+enable
+config terminal
+hostname S2
+no ip domain-lookup
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0 15
+password cisco
+login
+exit
+end
+
+vlan database
+vtp server
+vlan 99
+name soporte
+exit
+
+interface range fa0/1-5
+switchport access vlan 99
+exit
+
+! Configuracion basica S3
+enable
+config terminal
+hostname S3
+no ip domain-lookup
+enable secret cisco
+line console 0
+password cisco
+login
+exit
+line vty 0 15
+password cisco
+login
+exit
+end
+
+
+vlan database
+vtp server
+vlan 10
+name docente
+vlan 20 
+name estudiantes
+vlan 30
+name invitado
+vlan 99
+name soporte
+exit
+
+
+interface range fa0/1-5
+switchport access vlan 99
+exit
+
+interface range fa0/6-10
+switchport access vlan 30
+exit
+
+interface range fa0/11-17
+switchport access vlan 10
+exit
+
+interface range fa0/18-24
+switchport access vlan 20
+exit
+
+w
