@@ -6,7 +6,7 @@ const noResultsHeading = document.querySelector('.no_results');
 const noResults = document.querySelector('.strong');
 const loaderContainer = document.querySelector('.loader_container');
 
-const searchCharacter = async () => {
+const startRenderCharacters = async () => {
     const character = inputSearch.value;
     if (character.length === 0) return;
 
@@ -14,16 +14,13 @@ const searchCharacter = async () => {
     loaderContainer.classList.remove('hidden');
     loaderContainer.firstElementChild.classList.remove('hidden');
 
-    const resp = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=67788e74df746a1523d8ebb504ee1008&hash=cf5ec9bfa5a156f031a69417cd0e012c&nameStartsWith=${character}`);
-    const { data } = await resp.json();
+    const characters = await searchCharacter(character);
 
     loaderContainer.classList.add('hidden');
     loaderContainer.firstElementChild.classList.add('hidden');
 
-    const characters = data.results;
 
     if (characters.length === 0) {
-        console.log('here');
         noResultsHeading.classList.remove('hidden');
         noResults.textContent = character;
     }
@@ -47,6 +44,12 @@ const searchCharacter = async () => {
 
 }
 
+const searchCharacter = async (character) => {
+    const resp = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=1&apikey=67788e74df746a1523d8ebb504ee1008&hash=cf5ec9bfa5a156f031a69417cd0e012c&nameStartsWith=${character}`);
+    const { data } = await resp.json();
+    return data.results;
+}
+
 const removeAllItems = () => {
     const allElements = charactersContainer.children;
     const elementsToRemove = [];
@@ -66,6 +69,6 @@ form.addEventListener('submit', (event) => {
     if (!noResultsHeading.classList.contains('hidden')) {
         noResultsHeading.classList.add('hidden');
     }
-    searchCharacter();
+    startRenderCharacters();
     inputSearch.value = '';
 });
