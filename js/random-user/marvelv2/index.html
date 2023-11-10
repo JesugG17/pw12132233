@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>MarvelV2</title>
+</head>
+<body>
+    <form class="form">
+        <h4>Search a character</h4>
+        <div class="form_input">
+            <input class="input" type="text" placeholder="Search a character">
+            <button>
+                <img src="../search.svg" alt="Search icon">
+            </button>
+        </div>
+    </form>
+    <ul class="character_container">
+        <h4 class="no_results hidden">No results found with <strong class="strong"></strong></h4>
+        <div class="loader_container hidden">
+            <div class="loader hidden"></div>
+        </div>
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>
