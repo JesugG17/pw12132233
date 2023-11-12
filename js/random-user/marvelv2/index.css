@@ -58,42 +58,42 @@ body {
 .form_input {
     display: flex;
     background-color: var(--gray-light);
-    /* padding: 5px; */
     border-radius: 5px;
+    
+    & input {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        padding: 5px;
+        flex: 1;
+
+    }
+
+    & input:focus {
+        outline: none;
+    }
+
+    & button {
+        display: flex;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        background-color: orange;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    & button:hover {
+        filter: brightness(105%);
+    }
+
+    & img {
+        width: 30px;
+        filter: invert(1);
+    }
 }
 
-
-.form_input input {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    padding: 5px;
-    flex: 1;
-}
-
-.form_input input:focus {
-    outline: none;
-}
-
-.form_input button {
-    display: flex;
-    align-items: center;
-    border-radius: 8px 0px 0px 8px;
-    background-color: orange;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.form_input button:hover {
-    filter: brightness(105%);
-}
-
-.form_input img {
-    width: 30px;
-    filter: invert(1);
-}
 
 .character_container {
     background-color: var(--gray-medium);
@@ -114,33 +114,35 @@ body {
     display: flex;
     gap: 10px;
     border-radius: 0px 10px 10px 0px;
-}
 
-.character_item img {
-    width: 130px;
-    border-radius: 0px 10px 10px 0px;
-}
+    & img {
+        width: 130px;
+        border-radius: 0px 10px 10px 0px;
+    }
 
-.character_item div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    color: #fff;
-}
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        color: #fff;
 
-.character_item div h4 {
-    color: orange;
-    font-size: 1.3em;
-}
+        & h4 {
+            color: orange;
+            font-size: 1.3em;
+        }
 
-.character_item div p {
-    opacity: 0.7;
-    font-size: 0.8em;
-}
+        & p {
+            opacity: 0.7;
+            font-size: 0.8em;
+        }
 
-.character_item div strong {
-    font-size: 0.7em;
+        & strong {
+            font-size: 0.7em;
+        }
+    }
+
+    
 }
 
 .no_results {

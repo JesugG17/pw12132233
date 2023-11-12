@@ -62,13 +62,15 @@ prevButton.addEventListener('click', () => {
     showData();
 });
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener('click', function () {
     currentCharacter++;
     if (currentCharacter === characters.length) currentCharacter = 0;
 
     showData();
-
 });
+
+
+const add = (a, b) => a + b;
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -79,4 +81,9 @@ inputSearch.addEventListener('keyup', (event) => {
     if (event.code !== 'Enter') return;
 
     searchCharacter(event.target.value);
+});
+
+
+inputSearch.addEventListener('keyup', (event) => {
+    console.log(event);
 });

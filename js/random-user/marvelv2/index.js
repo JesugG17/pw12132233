@@ -25,6 +25,8 @@ const startRenderCharacters = async () => {
         noResults.textContent = character;
     }
 
+    console.log(characters);
+
     for (let i = 0; i < characters.length; i++) {
 
         const character = characters[i];
@@ -35,7 +37,7 @@ const startRenderCharacters = async () => {
                 <img src=${character.thumbnail.path + '.' + character.thumbnail.extension} alt="Character img">
                 <div>
                     <h4>${character.name}</h4>
-                    <p>${character.description}</p>
+                    <p>${character.description.length === 0 ? 'no description availble' : character.description}</p>
                     <strong>Comics: ${character.comics.available}</strong>
                 </div>
         `
